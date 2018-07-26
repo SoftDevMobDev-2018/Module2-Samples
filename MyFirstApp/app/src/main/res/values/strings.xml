@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="station_title">Glenferrie Railway Station, ca. 1934</string>
+    <string name="station_author">Ada May Plante</string>
+    <string name="source">State Library of Victoria, www.slv.vic.gov.au</string>
+</resources>
