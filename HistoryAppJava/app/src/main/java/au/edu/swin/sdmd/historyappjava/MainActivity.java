@@ -52,15 +52,17 @@ public class MainActivity extends AppCompatActivity {
      * Note ids are ints.
      */
     private void showDetail(int title, int author, int id) {
-        // The receiver of the intent is the ImageActivity class, which handles the appearance
-        // of the detail view.
-        Intent imageDetailIntent = new Intent(this, ImageActivity.class);
-
-        // Three values are added to the bundle passed with the intent (extra),
+        // Three values are added to the bundle passed with the intent,
         // using the keys specified in this class.
-        imageDetailIntent.putExtra(TITLE_KEY, title);
-        imageDetailIntent.putExtra(AUTHOR_KEY, author);
-        imageDetailIntent.putExtra(IMAGE_KEY, id);
+        Bundle dataBundle = new Bundle();
+        dataBundle.putInt(TITLE_KEY, title);
+        dataBundle.putInt(AUTHOR_KEY, author);
+        dataBundle.putInt(IMAGE_KEY, id);
+
+        // The receiver of the intent is the ImageActivity class, which handles
+        // the appearance of the detail view.
+        Intent imageDetailIntent = new Intent(this, ImageActivity.class);
+        imageDetailIntent.putExtras(dataBundle);
 
         // The new activity is started with the intent.
         startActivity(imageDetailIntent);
