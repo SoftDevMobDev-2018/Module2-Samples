@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HistoryApp</string>
+    <string name="source_slv">Source: State Library of Victoria, www.slv.vic.gov.au</string>
+    <string name="station">
+        Glenferrie Railway Station, ca. 1934</string>
+    <string name="station_author">Ada May Plante</string>
+    <string name="theatre">
+        Palace Theatre on Glenferrie Rd, ca. 1940
+    </string>
+    <string name="theatre_author">
+        Creator unknown
+    </string>
+    <string name="college">
+        Swinburne Technical College, ca. 1940
+    </string>
+    <string name="college_author">
+        Creator unknown
+    </string>
+</resources>
+
